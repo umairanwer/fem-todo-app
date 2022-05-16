@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Todo app</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="page-container dark-theme">
+  <header> 
+    <h1>TODO</h1> 
+    <img src="images/icon-sun.svg" alt="Theme Icon Sun" class="theme-toggle-dark">
+    <img src="images/icon-moon.svg" alt="Theme Icon Moon" class="theme-toggle-light">
+  </header>
+
+  <div class="insert-todo todo-item">
+    <div class="checkbox-container">
+      <img src="images/icon-check.svg" alt="checkbox" class="checkbox">
+    </div>
+    <input id="new-todo-item" type="text" placeholder="Create a new todo...">
+  </div>
+  <div class="todo-list">
+    <div class="todo-item template">
+      <div class="checkbox-container">
+        <img src="images/icon-check.svg" alt="checkbox" class="checkbox">
+      </div>
+      <h2 class="todo-text"></h2>
+      <img src="images/icon-cross.svg" alt="Delete Button" class="delete-btn">
+    </div>
+  </div>
+  <div class="footer-container todo-item">
+    <p><span id="num-items"></span> items left</p>
+
+    <div class="filters-container">
+      <input type="radio" name="filter" id="all-items" checked>
+      <label for="all-items">All</label>
+      <input type="radio" name="filter" id="active-items">
+      <label for="active-items">Active</label>
+      <input type="radio" name="filter" id="complete-items">
+      <label for="complete-items">Completed</label>
+    </div>
+
+    <p id="clear-complete">Clear Completed</p>
+  </div>
+
+  <p class="reorder-text">Drag and drop to reorder list</p>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Umair</a>.
+  </footer>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
