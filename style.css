@@ -33,6 +33,7 @@
 body{
     justify-content: center;
     display: flex;
+    background-color: var(--v-dark-blue);
 }
 .page-container{
     height: 100vh;
@@ -40,6 +41,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-position: center top;
 }
 .dark-theme{
     background-color: var(--v-dark-blue);
@@ -96,6 +98,7 @@ header img{
     padding: 0 2rem;
     background-color: var(--todo-item-bg);
     column-gap: 2rem;
+    flex-shrink: 0;
 }
 
 .todo-list .todo-item:nth-child(2){
@@ -216,7 +219,10 @@ header img{
     align-self: center;
     width: 1.2rem;
 }
-
+.attribution{
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
 @media screen and (min-width: 800px) {
     :root{
         --desktop-width: 60rem;
