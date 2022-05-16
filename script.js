@@ -158,8 +158,14 @@ function deleteCompleted() {
 
 addListeners();
 
-addTodoItem("Testing 1", true);
-addTodoItem("Testing 2");
+addTodoItem("Code todo app", true);
+addTodoItem("Read for 1 hour", true);
+addTodoItem("Workout");
+addTodoItem("Pay the bills");
+addTodoItem("Implement drag-drop functionality");
+addTodoItem("Implement save feature");
+
+
 
 document.querySelector(".theme-toggle-dark").addEventListener('click', ()=>{
     document.querySelector('.page-container').classList.remove("dark-theme");
